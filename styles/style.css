@@ -8,12 +8,11 @@
 }
 #index #wrapper {
     width: 100vw;
-    background-color: blueviolet;
+    background-color: #6b0a7a;
 }
 #avis_embed #wrapper, #spil_embed #wrapper, #film_embed #wrapper {
     background-color: #ffffff;
     width: 100vw;
-    height: 100vh;
 }
 
 /* Navigationsbar */
@@ -30,8 +29,14 @@ header {
     grid-template-columns: 1fr 2fr;
 
 }
+header a {
+    place-self: center;
+    z-index: 1000;
+}
 nav {
     grid-column: 2/-1;
+    align-self: center;
+    height: 100%;
 }
 .g-navbar {
     display: flex;
@@ -40,9 +45,9 @@ nav {
     align-items: center;
     max-width: 1080px;
     height: 60px;
-    margin: 0 auto;
     width: 100%;
     position: relative;
+    align-content: center;
 }
 .g-navbar ul li {
     line-height: 3;
@@ -54,8 +59,10 @@ nav {
     display: block;
 }
 .g-navbar .g-nav-head {
+
     height: 100%;
-    align-self: center;
+    display: flex;
+    align-items: center;
 }
 .g-navbar .g-nav-head ul {
     display: none;
@@ -69,9 +76,25 @@ nav {
 #index main {
     width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
     padding-top: 100px;
+    color: black;
 
+
+}
+#index .me_pic {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+#index .me_pic img {
+    grid-column: 2/-1;
+    border-radius: 500px;
+}
+#index .me_pic div {
+    grid-column: 1/2;
+    background-color: rgb(241, 240, 240);
+    max-width: 70%;
+    max-height: 70%;
+    margin: 0 auto;
 }
 
 /********************** embed **********************/
