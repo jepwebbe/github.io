@@ -10,6 +10,11 @@
     width: 100vw;
     background-color: blueviolet;
 }
+#avis_embed #wrapper, #spil_embed #wrapper, #film_embed #wrapper {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+}
 
 /* Navigationsbar */
 header {
@@ -69,6 +74,7 @@ nav {
 
 }
 
+/********************** embed **********************/
 
 /* 
 #index main div {
