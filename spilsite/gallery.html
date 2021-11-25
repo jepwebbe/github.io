@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Jeppe's Psychonauts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="gallery.js" defer></script>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/c1fd27c7bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Menu -->
+        <nav>
+            <!--Internal nav-->
+            <ul class="internal-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="current" href="gallery.html">GALLERY</a></li>
+                <li><a href="characters.html">CHARACTERS</a> </li>
+                <!--External nav-->
+                <li class="external-menu"><a href="https://www.xbox.com/da-DK/games/psychonauts-2" target="_blank"><i
+                            class="fab fa-xbox"></i></a>
+                    <a href="https://store.steampowered.com/app/607080/Psychonauts_2/" target="_blank"><i
+                            class="fab fa-steam"></i></a>
+                    <a href="https://store.playstation.com/en-us/product/UP6312-CUSA27145_00-PSYCHONAUTS2SIEA/"
+                        target="_blank"><i class="fab fa-playstation"></i></a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+
+    </header>
+    <div id="wrapper">
+        <!-- Hero image-->
+        <div class="hero-parent">
+            <img class="hero" src="images/desktop/psychonauts_1280x720.jpg"
+                alt="The main character, Raz, from the game Psychonauts 2">
+            <img class="logo" src="images/desktop/psychonauts-logo_700x287.png"
+                alt="The logo from the game Psychonauts 2">
+            <!-- Logo-->
+        </div>
+        <main>
+            <h1>Wallpaper</h1>
+            <div class="flex-container wallflex">
+                <picture>
+                    <!-- En form for inline media query-->
+                    <source media="(min-width: 881px)" srcset="images/desktop/Gallery/psychonauts_wp1_188x130.gif">
+                    <img class="thumbs" src="images/desktop/Gallery/psychonauts_wp1_1041x707.jpg" alt="Picture from the game">
+                </picture>
+                <picture >
+                    <source media="(min-width: 881px)" srcset="images/desktop/Gallery/psychonauts_wp2_188x130.gif">
+                    <img class="thumbs" id="active" src="images/desktop/Gallery/psychonauts_wp2_1041x707.jpg" alt="Picture from the game">
+                </picture>
+                <picture>
+                    <source media="(min-width: 878px)" srcset="images/desktop/Gallery/psychonauts_wp3_188x130.gif">
+                    <img class="thumbs" src="images/desktop/Gallery/psychonauts_wp3_1041x707.jpg" alt="Picture from the game">
+                </picture>
+                <picture>
+                    <source media="(min-width: 879px)" srcset="images/desktop/Gallery/psychonauts_wp4_188x130.gif">
+                    <img class="thumbs" src="images/desktop/Gallery/psychonauts_wp4_1041x707.jpg" alt="Picture from the game">
+                </picture>
+                <picture>
+                    <source media="(min-width: 879px)" srcset="images/desktop/Gallery/psychonauts_wp5_188x130.gif">
+                    <img class="thumbs" src="images/desktop/Gallery/psychonauts_wp5_1041x707.jpg" alt="Picture from the game">
+                </picture>
+            </div>
+            <div class="flex-container pileflex">
+                <div class="pile">
+                    <i id="prev" class="fas fa-chevron-circle-left"></i></div>
+                <img class="big-image" src="images/desktop/Gallery/psychonauts_wp2_1041x707.jpg"
+                    alt="Picture from the game">
+                <div class="pile">
+                    <i id="next" class="fas fa-chevron-circle-right"></i>
+                </div>
+            </div>
+
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div>
+                <p>
+                    A 2021 student production.<br>
+                    No rights reserved.<br>
+                    No responsibility taken.<br>
+                    Next Kbh.<br>
+                    Copenhagen, Denmark <br>
+                </p>
+            </div>
+
+        </footer>
+
+    </div> <!-- Wrapper end -->
+
+</body>
+
+</html>
