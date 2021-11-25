@@ -4,8 +4,8 @@ console.log(mainMenus);
 
 // Lægger eventlistener på hovedmenuer
 for(let i = 0; i <mainMenus.length; i++){
-    mainMenus[i].addEventListener("mouseenter", showHide);
-    mainMenus[i].addEventListener("mouseleave", showHide);
+    mainMenus[i].addEventListener("mouseover", showHide);
+    mainMenus[i].addEventListener("mouseout", showHide);
     console.log(mainMenus);
 
 
