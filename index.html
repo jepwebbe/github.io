@@ -5,57 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's the Jeppe page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Portfolio</title>
 
-        }
-
-
-        main {
-            width: 100vw;
-            height: 100vh;
-            background-color: blueviolet;
-            padding-top: 100px;
-
-        }
-
-
-        main div {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            background-color: yellow;
-            place-self: center;
-            align-items: center;
-            height: 300px;
-            padding-top: 100px;
-            margin: 0 auto;
-            border-radius: 20px;
-            font-size: 60px;
-        }
-
-
-    </style>
 </head>
 
-<body>
-    <div class="wrapper">
-    <main>
-        <div>
-            <p>
-                <a href="jepwebbe.github.io/blob/main/Spilsite/parasite_site/index.html">Spilsite</a>
-            </p>
+<body id="index">
+    <div id="wrapper">
+        <header>
+            <nav>
+                <!-- Menu -->
+                <ul class="g-navbar">
 
-            <p><a href="https://jepp525a.elev.nextkbh.dk/filmsite/">Filmsite</a>
-            </p>
-        </div>
-    </main>
-</div>
-
+                    <li class="g-nav-head">Hjemmesider
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">1</a></li>
+                        </ul>
+                    </li>
+                    <li class="g-nav-head">Tekstproduktioner
+                        <ul>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">2</a></li>
+                        </ul>
+                    </li>
+                    <li class="g-nav-head">Foot
+                        <ul>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <p>
+                    <a href="https://jepwebbe.github.io/spilsite/parasite_site/">Parasite filmsite</a>
+                </p>
+                <p>
+                    <a href="https://jepwebbe.github.io/filmsite">Psychonauts 2 spilsite</a>
+                </p>
+            </div>
+        </main>
+    </div>
+    <script src="js/landing.js"></script>
 </body>
 
 </html>
