@@ -35,6 +35,7 @@ header {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-right: 10%;
 
 }
 header a {
@@ -98,6 +99,7 @@ nav {
 main {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 1em;
 }
 #index main {
     width: 100vw;
@@ -105,28 +107,27 @@ main {
     padding-top: 100px;
     color: black;
 }
-#index .me__pic {
+#index #me .me-div {
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
-#index .me__pic img {
+#index #me img {
     grid-column: 2/-1;
     border-radius: 500px;
     max-width: 300px;
 }
-#index .me__pic .me__text {
+#index #me .me__text {
     grid-column: 1/2;
     max-width: 70%;
     max-height: 70%;
     margin: 0 auto;
     align-self: center;
 }
-#index #sitemap {
-    height: 20vh;
-    width: 50%;
+#index #me #sitemap {
     background-color: aqua;
     margin: 0 auto;
     margin-top: 3em;
+    grid-row: 2/-2
 }
 
 /********************** galleries **********************/
@@ -157,3 +158,28 @@ main {
     border-radius: 20px;
     font-size: 60px;
 } */
+@media (max-width: 840px) {
+    header {
+        grid-template-columns: 1fr 3fr;
+        padding-right: 10%;
+    
+    }
+    #index #me .me-div {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    #index #me img {
+        grid-column: 1/-1;
+        grid-row: 2/2;
+    }
+    #index #me .me__text {
+        grid-column: 1/1;
+        grid-row: 3/3;
+    }
+    #index #me #sitemap {
+        grid-row: 1/1;
+    }
+}
+@media (max-width: 500px) {
+    
+}
