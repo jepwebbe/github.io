@@ -5,8 +5,6 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-
-
 }
 body {
     font-family: 'Open Sans', sans-serif;
@@ -20,7 +18,11 @@ body {
     width: 100vw;
 }
 
-/* Navigationsbar */
+h1 {
+    text-align: center;
+}
+
+/* Navigational bar */
 header {
     width: 100%;
     position: sticky;
@@ -71,6 +73,7 @@ nav {
     display: flex;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 .g-navbar .g-nav-head ul {
     display: none;
@@ -78,10 +81,20 @@ nav {
     top: 50px;
     list-style-type: none;
     background-color: #fff7dd;
-    width: 20%;
     border-radius: 0 0 30px 5px;
+    width: 200%;
 }
-/* Main indhold */
+.g-navbar .g-nav-head .g-nav-subhead ul {
+    right: 100%;
+    background-color: bisque;
+    top: 10px;
+    
+}
+.g-navbar .g-nav-head #subhead-right ul {
+    left: 100%;
+} 
+
+/* Main content */
 main {
     max-width: 1280px;
     margin: 0 auto;
@@ -91,25 +104,45 @@ main {
     height: 100vh;
     padding-top: 100px;
     color: black;
-
-
 }
-#index .me_pic {
+#index .me__pic {
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
-#index .me_pic img {
+#index .me__pic img {
     grid-column: 2/-1;
     border-radius: 500px;
     max-width: 300px;
 }
-#index .me_pic div {
+#index .me__pic .me__text {
     grid-column: 1/2;
     max-width: 70%;
     max-height: 70%;
     margin: 0 auto;
+    align-self: center;
+}
+#index #sitemap {
+    height: 20vh;
+    width: 50%;
+    background-color: aqua;
+    margin: 0 auto;
+    margin-top: 3em;
 }
 
+/********************** galleries **********************/
+#gallery_1, #gallery_2, #gallery_3 {
+    height: 25vh;
+    max-width: 100%;
+}
+#gallery_1 {
+    background-color: blue;
+}
+#gallery_2 {
+    background-color: green;
+}
+#gallery_3 {
+    background-color: red;
+}
 /********************** embed **********************/
 
 /* 

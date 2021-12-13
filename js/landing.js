@@ -1,11 +1,14 @@
 // Finde hovedmenuerne
 const mainMenus = document.querySelectorAll(".g-navbar .g-nav-head");
+const subMenus = document.querySelectorAll(".g-navbar .g-nav-head .g-nav-subhead");
 console.log(mainMenus);
 
 // Lægger eventlistener på hovedmenuer
 for(let i = 0; i <mainMenus.length; i++){
     mainMenus[i].addEventListener("mouseover", showHide);
     mainMenus[i].addEventListener("mouseout", showHide);
+    subMenus[i].addEventListener("mouseover", showHide);
+    subMenus[i].addEventListener("mouseout", showHide);    
     console.log(mainMenus);
 
 

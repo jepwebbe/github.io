@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmen - Produkter</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/c1fd27c7bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="products">
+    <div id="g-wrapper">
+        <header>
+            <nav>
+                <div id="logo">
+                    <img src="images/karmen-logo.png" alt="Webshoppen Karmens logo i sort">
+                </div>
+                <div id="burger"><img src="images/burger.png" alt="Billede af en burgermenu" class="burger-img"><i class="fas fa-times"></i></div>
+                <ul class="g-navbar">
+                    <li class="g-nav-head"><a href="index.html">Forside</a></li>
+                    <li class="g-nav-head" id="g-nav-active"><a href="products.html">Produkter</a></li>
+                    <li class="g-nav-head g-drop"><a href="">Mere info</a>
+                        <ul class="g-down">
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Om os</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="g-nav-head"><a href="basket.html"><i class="fas fa-cart-plus"></i>Kurv</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <section id="catalogue">
+                <div class="g-section-width">
+                    <h1>Alle <span>produkter</span></h1>
+                    <div id="catalogue-grid">
+                        <article class="product easel">
+                            <div class="product__img"><img src="images/products/staffeli.png" alt="Et staffeli"></div>
+                            <div class="product__head">
+                                <h4>Mini staffeli</h4>
+                            </div>
+                            <div class="product__price">
+                                <p><span class="strike">95 kr</span><span class="now">30 kr</span></p>
+                            </div>
+                            <a class="g-button-link" href="product.html">
+                                <div class="g-button"><span>Læs mere</span></div>
+                            </a>
+                        </article>
+                        <article class="product succulent">
+                            <div class="product__img"><img src="images/products/plante.png" alt="En sukkulent"></div>
+                            <div class="product__head">
+                                <h4>Sukkulent</h4>
+                            </div>
+                            <div class="product__price">
+                                <p><span class="strike">150 kr</span><span class="now">50 kr</span></p>
+                            </div>
+                            <a class="g-button-link" href="product.html">
+                                <div class="g-button"><span>Læs mere</span></div>
+                            </a>
+                        </article>
+                        <article class="product basket">
+                            <div class="product__img"><img src="images/products/kurv.png" alt="En kurv"></div>
+                            <div class="product__head">
+                                <h4>Kurv</h4>
+                            </div>
+                            <div class="product__price">
+                                <p><span class="now">30 kr</span></p>
+                            </div>
+                            <a class="g-button-link" href="product.html">
+                                <div class="g-button"><span>Læs mere</span></div>
+                            </a>
+                        </article>
+                        <article class="product owl">
+                            <div class="product__img"><img src="images/products/ugle.png" alt="En ugle"></div>
+                            <div class="product__head">
+                                <h4>Ugle</h4>
+                            </div>
+                            <div class="product__price">
+                                <p><span class="now">30 kr</span></p>
+                            </div>
+                            <a class="g-button-link" href="product.html">
+                                <div class="g-button"><span>Læs mere</span></div>
+                            </a>
+                        </article>
+                        <article class="product croc">
+                            <div class="product__img"><img src="images/products/krokodille.png" alt="En krokodille"></div>
+                            <div class="product__head">
+                                <h4>Krokodille</h4>
+                            </div>
+                            <div class="product__price">
+                                <p><span class="now">65 kr</span></p>
+                            </div>
+                            <a class="g-button-link" href="product.html">
+                                <div class="g-button"><span>Læs mere</span></div>
+                            </a>
+                        </article>
+
+                    </div> <!-- catalogue grid end -->
+
+                </div> <!-- g-section-width end -->
+            </section> <!-- catalogue end -->
+            <section id="insta" class="g-section-width">
+                <div id="insta-head">
+                    <i class="fab fa-instagram"></i>
+                    <h2>Bliv inspireret af <br><span>Billeder fra vores Instagram </span></h2>
+                </div> <!-- insta-head end -->
+                <div id="insta-grid">
+                    <img src="images/insta/image-0.png" alt="Hvide huse og blå himmel">
+                    <img src="images/insta/image-1.png" alt="Tågede bjerge">
+                    <img src="images/insta/image-2.png" alt="En båd i blåt vand">
+                    <img src="images/insta/image-3.png" alt="En bjergside">
+                    <img src="images/insta/image-4.png" alt="En vandringsperson i bjergene">
+                    <img src="images/insta/image-5.png" alt="Bjergveje">
+                    <img src="images/insta/image-6.png" alt="En turist tager billede i bjergene">
+                    <img src="images/insta/image-7.png" alt="En skyet bjergtop">
+                    <img src="images/insta/image-8.png" alt="En rød hængebro">
+                    <img src="images/insta/image-9.png" alt="Kajak i bjerglandskab">
+                </div> <!-- insta-grid end -->
+            </section>
+            <footer>
+                <aside>
+                    <h3>Tilmeld dig vores nyhedsbrev</h3>
+                    <form action="thanks.html" id="newsletter">
+                        <div><i class="fas fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Din e-mail">
+                            <p id="newsletter_error"></p>
+                        </div>
+                        <input class="g-button" type="submit" value="Abonner">
+                    </form>
+                </aside>
+                <div id="g-foot-grid">
+                    <img src="images/karmen-logo-footer.png" alt="Karmens logo">
+                    <ul id="g-foot-flex">
+                        <li><a href="#">Forside</a></li>
+                        <li id="g-foot-active"><a href="products.html">Produkter</a></li>
+                        <li><a href="#">Mere info</a></li>
+                        <li><a href="basket.html">Kurv<i class="fas fa-cart-plus"></i></a></li>
+                    </ul>
+                    <div id="g-foot-burger"><img src="images/burger-footer.png" alt="Billede af en burgermenu" class="burger-img"></div>
+                </div> <!-- g-foot-grid end -->
+            </footer>
+        </main>
+        <!-- sticky to top button below-->
+        <a class="a" href="#">
+            <div class="border">
+                <span>&nbsp;</span>
+            </div>
+        </a>
+    </div> <!-- wrapper end -->
+    <script src="scripts/global.js"></script>
+</body>
+
+</html>

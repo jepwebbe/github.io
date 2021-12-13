@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmen - Tak</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/c1fd27c7bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="index">
+    <div id="g-wrapper">
+        <header>
+            <nav>
+                <div id="logo">
+                    <img src="images/karmen-logo.png" alt="Webshoppen Karmens logo i sort">
+                </div>
+                <div id="burger"><img src="images/burger.png" alt="Billede af en burgermenu" class="burger-img"><i class="fas fa-times"></i></div>
+                <ul class="g-navbar">
+                    <li class="g-nav-head"><a href="index.html" >Forside</a></li>
+                    <li class="g-nav-head"><a href="products.html">Produkter</a></li>
+                    <li class="g-nav-head g-drop"><a href="">Mere info</a>
+                        <ul class="g-down">
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Om os</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="g-nav-head" id="g-nav-active"><a href="basket.html"><i class="fas fa-cart-plus"></i>Kurv</a></li>
+                </ul>
+            </nav>
+        </header>
+       
+        <main>
+            <section id="thanks">
+                <h1>Tak</h1>
+                <p>Fordi du støtter os og vores mission om bæredygtighed</p>
+            </section>
+               
+            <footer>
+                <aside>
+                    <h3>Tilmeld dig vores nyhedsbrev</h3>
+                    <form action="thanks.html" id="newsletter">
+                        <div><i class="fas fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Din e-mail">
+                            <p id="newsletter_error"></p>
+                        </div>
+                        <input class="g-button" type="submit" value="Abonner">
+                    </form>
+                </aside>
+                <div id="g-foot-grid">
+                    <img src="images/karmen-logo-footer.png" alt="Karmens logo">
+                    <ul id="g-foot-flex">
+                        <li><a href="#">Forside</a></li>
+                        <li><a href="products.html">Produkter</a></li>
+                        <li><a href="#">Mere info</a></li>
+                        <li id="g-foot-active"><a href="basket.html">Kurv<i class="fas fa-cart-plus"></i></a></li>
+                    </ul>
+                    <div id="g-foot-burger"><img src="images/burger-footer.png" alt="Billede af en burgermenu" class="burger-img"></div>
+                </div> <!-- g-foot-grid end -->
+            </footer>
+        </main>
+            <!-- sticky to top button below-->
+    <a class="a" href="#">
+        <div class="border">
+            <span>&nbsp;</span>
+        </div>
+    </a>
+    </div> <!-- wrapper end -->
+    <script src="scripts/global.js"></script>
+</body>
+
+</html>
