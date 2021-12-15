@@ -34,9 +34,7 @@ function leShow() {
     lightImg.style.display = "block";
     lightClose.style.display = "block";
 
-
     currentImg = lightArray.indexOf(this);
-    console.log(currentImg);
 
     captions.textContent = this.getAttribute("alt");
     let newImg = this.getAttribute("src");
@@ -53,11 +51,9 @@ function leHide() {
 // Skift billede med pileknapper
 function rollImg() {
     if (this.getAttribute("id") === "next") {
-        
         if (currentImg < lightGallery.length-1) {
             currentImg++;
             console.log(currentImg);
-
         } else {
             currentImg = 0;
         }
@@ -69,7 +65,6 @@ function rollImg() {
         }
     }
     captions.textContent = lightGallery[currentImg].getAttribute("alt");
-
     let newImg = lightGallery[currentImg].getAttribute("src");
     lightImg.setAttribute("src", newImg);
 }
