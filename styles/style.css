@@ -36,7 +36,6 @@ header {
     font-family: 'EB Garamond', serif;
     font-size: 24px;
     background-color: #fff7dd;
-    max-width: 100vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -61,7 +60,6 @@ nav {
     justify-content: space-around;
     list-style: none;
     align-items: center;
-    max-width: 1080px;
     height: 60px;
     width: 100%;
     position: relative;
@@ -235,29 +233,29 @@ main {
 
 /* gallery with lightbox */
 
-  #gallery__thumbs_3 {
+  .lightbox__thumbs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   }
-  #gallery__thumbs_3 figure {
+  .lightbox__thumbs figure {
     display: grid;
   }
-  #gallery__thumbs_3 figure picture {
+  .lightbox__thumbs figure picture {
     grid-area: 1/1/1/1;
   }
-  #gallery__thumbs_3 figure figcaption {
+  .lightbox__thumbs figure figcaption {
     grid-area: 1/1/1/1;
     align-self: end;
     display: none;
     text-align: center;
     color: white;
   }
-  #gallery__thumbs_3 figure:hover figcaption {
+  .lightbox__thumbs figure:hover figcaption {
     display: block;
     background-color: #00000080;
   }
   /* for the lightbox */
-  #lightbox {
+  .lightbox {
       background-color: black;
       position:fixed;
       background-size:cover;
@@ -266,14 +264,14 @@ main {
       z-index:1000;
       display: none;
   }
-  #closeMe {
+  .closeMe {
     position: fixed;
     z-index: 10000;
     display: none;
     width: 100%;
     height: 100%;
   }
-  #lightbox__image {
+  .lightbox__image {
     background-color: #fff;
     margin: 10% auto;
     display: grid;
@@ -281,26 +279,26 @@ main {
     z-index: 100000;
     position: relative;
   }
-  #lightbox__image img {
+  .lightbox__image img {
     justify-self: center;
     grid-area: 1/1/1/1;
   }
-  #lightbox i {
+  .lightbox i {
     align-self: center;
     grid-area: 1/1/1/1;
   }
-  #lightbox__image #next3 {
+  .lightbox__image .next {
     justify-self: end;
   }
-  #lightbox__image #prev3 {
+  .lightbox__image .prev {
     justify-self: start;
   }
-  #lightbox__image i {
+  .lightbox__image i {
     font-size: 40px;
     cursor: pointer;
     color: green;
   }
-  #lightbox__image p {
+  .lightbox__image p {
     z-index: 10;
     grid-area: 2/1/3/1;
     background-color: grey;
@@ -310,6 +308,77 @@ main {
     margin: 0;
   }
 
+  /* dropdown */
+  #snippets #dropdown .g-navbar {
+      background-color:#fff7dd;
+  }
+  /* form validation */
+  #bill {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  #bill h1 {
+    font-weight: 200;
+  }
+  #bill form {
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  form .bill__form {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 6em 5.5em;
+  }
+  form .bill__form .oneliner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bill__form div input {
+    border: none;
+    padding: 0.5em 0 0.5em 0;
+  }
+  .bill__form input {
+    border: none;
+  }
+  .bill__form ::-webkit-input-placeholder {
+    color: #979797;
+    font-size: 24px;
+  }
+  .bill__form ::-moz-placeholder {
+    color: #979797;
+    font-size: 24px;
+    opacity: 1;
+  }
+  .bill__form :-moz-placeholder {
+    color: #979797;
+    font-size: 24px;
+    opacity: 1;
+  }
+  .bill__form label {
+    color: black;
+    font-size: 20px;
+  }
+  .bill__form div {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2em 0;
+  }
+  .g-button {
+    height: 60px;
+    width: 170px;
+    background: linear-gradient(
+      200.82deg,
+      #ffe9e9 27.89%,
+      #f9c4d2 83.86%
+    ) !important;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    transition: 0.3s;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
 /********************** embed **********************/
 
 /* 

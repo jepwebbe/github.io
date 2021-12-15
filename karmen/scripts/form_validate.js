@@ -78,12 +78,19 @@ function validateBilling(evt) {
     }
 
 }
+/* if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= this.email.value.length) {
+    evt.preventDefault();
+    error = "Din email-adresse skal være et gyldigt format (f.eks funny@johnny.com)";
+    messageFieldCard.textContent = error;
+    this.email.focus();
+    return false;
+} */
 
-/* atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= this.email.value.length */
+/*  */
 /*     // test if email correct format
     if (this.email.value != /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) {
         evt.preventDefault();
-        error = "Din email-adresse skal være et gyldigt format (f.eks funny@johnny.com)";
+        error = "";
         messageField.textContent = error;
         this.email.focus();
         return false;

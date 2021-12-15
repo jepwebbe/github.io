@@ -1,7 +1,6 @@
 // Finde hovedmenuerne
 const mainMenus = document.querySelectorAll(".g-navbar .g-nav-head");
 const subMenus = document.querySelectorAll(".g-navbar .g-nav-head .g-nav-subhead");
-console.log(mainMenus);
 
 // Lægger eventlistener på hovedmenuer
 for(let i = 0; i <mainMenus.length; i++){
@@ -14,7 +13,7 @@ for(let i = 0; i <mainMenus.length; i++){
 
     function showHide(){
         // finde undermenu som tilhører aktuelle menupunkt
-        let subMenu = this.querySelector("ul");
+        let subMenu = this.querySelector(".drop");
         // så skal vi vise/skjule den aktuelle subMenu
         if(subMenu.style.display !== "block"){
             subMenu.style.display = "block";

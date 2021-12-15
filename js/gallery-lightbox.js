@@ -1,12 +1,12 @@
 let currentImg;
-const lightDiv = document.querySelector("#lightbox__image");
-const lightImg = document.querySelector("#lightbox__image img");
-const lightbox = document.querySelector("#lightbox");
-const lightClose = document.querySelector("#closeMe");
-const lightGallery = document.querySelectorAll("#gallery__thumbs_3 img");
+const lightDiv = document.querySelector(".lightbox__image");
+const lightImg = document.querySelector(".lightbox__image img");
+const lightbox = document.querySelector(".lightbox");
+const lightClose = document.querySelector(".closeMe");
+const lightGallery = document.querySelectorAll(".lightbox__thumbs img");
 const lightArray = Array.from(lightGallery);
-const arrows3 = document.querySelectorAll("#lightbox__image i");
-let captions = document.querySelector("#lightbox__image p");
+const arrows3 = document.querySelectorAll(".lightbox__image i");
+let captions = document.querySelector(".lightbox__image p");
 
 //Lightbox
 for (let i = 0; i < lightGallery.length; i++) {
@@ -35,7 +35,7 @@ function hideLight() {
   lightClose.style.display = "none";
 }
 function rollImg3() {
-  if (this.getAttribute("id") === "next3") {
+  if (this.getAttribute("class") === "next") {
     if (currentImg < lightGallery.length - 1) {
       currentImg++;
     } else {
