@@ -11,7 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-#index #wrapper {
+#wrapper {
     width: 100vw;
     background-color: #FEFEFE;
 }
@@ -105,6 +105,20 @@ nav {
 .g-navbar .g-nav-head #subhead-right ul {
     left: 100%;
 }
+footer {
+  background-color: #fff7dd;
+  width: 100%;
+  height: 5em;
+  padding: 1em;
+}
+#index footer {
+  position: absolute;
+  bottom:0;
+}
+footer div {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
 /* Main content */
 main {
@@ -115,7 +129,6 @@ main {
 
 #index main {
     width: 100vw;
-    height: 100vh;
     padding-top: 100px;
     color: black;
 }
@@ -378,9 +391,89 @@ main {
     align-items: center;
     cursor: pointer;
   }
+  /* burger menu */
+  #burger .fa-times {
+    display: none;
+  }
+  #burger .burger {
+    display: flex;
+    z-index: 1000;
+
+    text-align: center;
+    font-size: 48px;
+  }
+  #burger .g-navbar {
+    display: none;
+    flex-direction: column;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #989ba4;
+    line-height: 2;
+    font-size: 35px;
+    padding: 0 10px;
+    z-index: 100000;
+    list-style-type: none;
+    text-align: center;
+  }
+  #burger .fa-times {
+    z-index: 1000000;
+  }
+  
+  /* read more button */
+  .readmore__button {
+    cursor: pointer;
+  }
   
 /********************** embed **********************/
 
+/********************** htmlcss **********************/
+/* gridflex */
+#htmlcss main {
+  background: #fcf7e6;
+
+
+}
+.gridflex{
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #fcf7e6;
+
+
+}
+.grid__minmax {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+
+}
+
+.flex__order {
+  display: flex;
+}
+.flex__order div {
+  flex: 3;
+}.flex__order p {
+  flex: 1;
+}
+.flex__order:hover {
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+
+  .grid__minmax img:first-of-type {
+    order:5;
+  }
+  .grid__minmax p:first-of-type {
+    order:6;
+  }
+  p.second {
+    order: 2;
+  }
+  div.second {
+    order: 1;
+  }
+}
 /* 
 #index main div {
     width: 30%;

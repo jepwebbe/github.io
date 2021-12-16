@@ -35,7 +35,7 @@ function hideLight() {
   lightClose.style.display = "none";
 }
 function rollImg3() {
-  if (this.getAttribute("class") === "next") {
+  if (this.classList.contains("next")) {
     if (currentImg < lightGallery.length - 1) {
       currentImg++;
     } else {
