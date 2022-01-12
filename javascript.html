@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/c1fd27c7bd.js" crossorigin="anonymous"></script>
+    <title>javascript</title>
+
+</head>
+
+<body id="javascript">
+    <!-- This is the lightbox belonging to gallery_3 it has to be the first element in the body to work -->
+    <div class="lightbox">
+        <div class="closeMe"></div>
+        <div class="lightbox__image">
+            <img src="https://jepwebbe.github.io/codepen/images/gallery/image1.jpg" alt="Alt text">
+            <i class="fas fa-arrow-right next"></i>
+            <i class="fas fa-arrow-left prev"></i>
+            <p>Alt text</p>
+        </div> <!-- gallery end -->
+    </div> <!-- lightbox end -->
+    <div id="wrapper">
+        <header>
+            <a href="index.html"><i class="fas fa-fist-raised"></i></a>
+            <nav>
+                <!-- Menu -->
+                <ul class="g-navbar">
+                    <li class="g-nav-head">SNIPPETS
+                        <ul class="drop">
+                            <li class="g-nav-subhead"><a href="javascript.html">javascript</a>
+                                <ul class="drop">
+                                    <li><a href="javascript.html#gallery">gallerier</a></li>
+                                    <li><a href="javascript.html#dropdown">dropdown</a></li>
+                                    <li><a href="javascript.html#localstorage">localstorage</a></li>
+                                    <li><a href="javascript.html#validate">formvalidering</a></li>
+                                    <li><a href="javascript.html#burger">burgermenu</a></li>
+                                    <li><a href="javascript.html#readmore">læs mere-knap</a></li>
+                                </ul>
+                            </li>
+                            <li class="g-nav-subhead" id="subhead-right"><a href="htmlcss.html">html & css</a>
+                                <ul class="drop">
+                                    <li><a href="htmlcss.html#grid">grids</a></li>
+                                    <li><a href="htmlcss.html#flex">flexbox</a></li>
+                                    <li><a href="htmlcss.html#table">table</a></li>
+                                    <li><a href="htmlcss.html#list">list</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="g-nav-head">SITES
+                        <ul class="drop">
+                            <li><a href="sites/film_embed.html">film-site</a></li>
+                            <li><a href="sites/spil_embed.html">spil-site</a></li>
+                            <li><a href="sites/avis_embed.html">avis-site</a></li>
+                            <li><a href="sites/next_embed.html">next-site</a></li>                            
+                            <li><a href="sites/karmen_embed.html">karmen-site</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="mailto:jepwebbe@gmail.com">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="snippets">
+            <h1>JavaScript-snippets</h1>
+            <article id="gallery">
+                <h2>gallerier</h2>
+                <section id="gallery_1">
+                    <h3>galleri med pile</h3>
+                    <div id="gallery-arrows">
+                        <img src="https://jepwebbe.github.io/codepen/images/gallery/image1.jpg" alt="An image"
+                            id="gallery__image">
+                        <i class="fas fa-arrow-right" id="next"></i>
+                        <i class="fas fa-arrow-left" id="prev"></i>
+                    </div> <!-- gallery-arrows end-->
+                    <iframe height="500px" style="width: 100%;" scrolling="no" title="gallery with arrows, filename"
+                        src="https://codepen.io/jepwebbe/embed/GRMNPaq?default-tab=js" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/jepwebbe/pen/GRMNPaq">
+                            gallery with arrows, filename</a> by Jeppe (<a
+                            href="https://codepen.io/jepwebbe">@jepwebbe</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </section>
+
+                <section id="gallery_2">
+                    <h3>galleri med thumbnails</h3>
+
+                    <div id="gallery-thumbnails">
+                        <div id="gallery__thumbs">
+                            <img class="thumbs" id="active"
+                                src="https://jepwebbe.github.io/codepen/images/gallery/image1.jpg"
+                                alt="Picture from the game">
+                            <img class="thumbs" src="https://jepwebbe.github.io/codepen/images/gallery/image2.jpg"
+                                alt="Picture from the game">
+                            <img class="thumbs" src="https://jepwebbe.github.io/codepen/images/gallery/image3.jpg"
+                                alt="Picture from the game">
+                        </div>
+
+                        <div id="gallery__main">
+                            <img id="gallery__mainImg"
+                                src="https://jepwebbe.github.io/codepen/images/gallery/image1.jpg"
+                                alt="Picture from the game">
+                            <i id="prev2" class="fas fa-chevron-circle-left"></i>
+                            <i id="next2" class="fas fa-chevron-circle-right"></i>
+                        </div>
+                    </div> <!-- gallery-thumbnails end -->
+                    <iframe height="500px" style="width: 100%;" scrolling="no" title="gallery with thumbnails"
+                        src="https://codepen.io/jepwebbe/embed/jOGyByM?default-tab=js" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/jepwebbe/pen/jOGyByM">
+                            gallery with thumbnails</a> by Jeppe (<a href="https://codepen.io/jepwebbe">@jepwebbe</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </section>
+                <section id="gallery_3">
+                    <h3>galleri med lightbox</h3>
+                    <div class="lightbox__thumbs">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 500px)"
+                                    srcset="https://jepwebbe.github.io/codepen/images/gallery/thumbs/thumb1.jpg">
+                                <img src="https://jepwebbe.github.io/codepen/images/gallery/image1.jpg"
+                                    alt="Image text 1">
+                            </picture>
+                            <figcaption>
+                                Figcaption.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 500px)"
+                                    srcset="https://jepwebbe.github.io/codepen/images/gallery/thumbs/thumb2.jpg">
+                                <img src="https://jepwebbe.github.io/codepen/images/gallery/image2.jpg"
+                                    alt="Image text 2">
+                            </picture>
+                            <figcaption>
+                                Figcaption.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 500px)"
+                                    srcset="https://jepwebbe.github.io/codepen/images/gallery/thumbs/thumb3.jpg">
+                                <img src="https://jepwebbe.github.io/codepen/images/gallery/image3.jpg"
+                                    alt="Image text 3">
+                            </picture>
+                            <figcaption>
+                                Figcaption.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 500px)"
+                                    srcset="https://jepwebbe.github.io/codepen/images/gallery/thumbs/thumb4.jpg">
+                                <img src="https://jepwebbe.github.io/codepen/images/gallery/image4.jpg"
+                                    alt="Image text 4">
+                            </picture>
+                            <figcaption>
+                                Figcaption.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 500px)"
+                                    srcset="https://jepwebbe.github.io/codepen/images/gallery/thumbs/thumb5.jpg">
+                                <img src="https://jepwebbe.github.io/codepen/images/gallery/image5.jpg"
+                                    alt="Image text 5">
+                            </picture>
+                            <figcaption>
+                                Figcaption.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 500px)"
+                                    srcset="https://jepwebbe.github.io/codepen/images/gallery/thumbs/thumb6.jpg">
+                                <img src="https://jepwebbe.github.io/codepen/images/gallery/image6.jpg"
+                                    alt="Image text 6">
+                            </picture>
+                            <figcaption>
+                                Figcaption.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 500px)"
+                                    srcset="https://jepwebbe.github.io/codepen/images/gallery/thumbs/thumb6.jpg">
+                                <img src="https://jepwebbe.github.io/codepen/images/gallery/image7.jpg"
+                                    alt="Image text 7">
+                            </picture>
+                            <figcaption>
+                                Figcaption.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 500px)"
+                                    srcset="https://jepwebbe.github.io/codepen/images/gallery/thumbs/thumb6.jpg">
+                                <img src="https://jepwebbe.github.io/codepen/images/gallery/image8.jpg"
+                                    alt="Image text 8">
+                            </picture>
+                            <figcaption>
+                                Figcaption.
+                            </figcaption>
+                        </figure>
+                    </div> <!-- lightbox__thumbs end -->
+                    <iframe height="500px" style="width: 100%;" scrolling="no"
+                        title="gallery with lightbox, picture, figure"
+                        src="https://codepen.io/jepwebbe/embed/OJxWjYR?default-tab=js" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/jepwebbe/pen/OJxWjYR">
+                            gallery with lightboix, picture, figure</a> by Jeppe (<a
+                            href="https://codepen.io/jepwebbe">@jepwebbe</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </section> <!-- gallery_3 end -->
+            </article> <!-- gallery end -->
+            <div class="snippets__other">
+                <article id="dropdown">
+                    <h2>dropdown</h2>
+                    <ul class="g-navbar">
+                        <li class="g-nav-head">SNIPPETS
+                            <ul class="drop">
+                                <li class="g-nav-subhead"><a href="javascript.html">javascript</a>
+                                    <ul class="drop">
+                                        <li><a href="javascript.html#gallery">gallerier</a></li>
+                                        <li><a href="javascript.html#dropdown">dropdown</a></li>
+                                        <li><a href="javascript.html#localstorage">localstorage</a></li>
+                                        <li><a href="javascript.html#validate">formvalidering</a></li>
+                                        <li><a href="javascript.html#burger">burgermenu</a></li>
+                                        <li><a href="javascript.html#readmore">læs mere-knap</a></li>
+                                    </ul>
+                                </li>
+                                <li class="g-nav-subhead" id="subhead-right"><a href="htmlcss.html">html & css</a>
+                                    <ul class="drop">
+                                        <li><a href="gallerier.html">grids</a></li>
+                                        <li><a href="">table</a></li>
+                                        <li><a href="">list</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="g-nav-head">SITES
+                            <ul class="drop">
+                                <li><a href="film_embed.html">film-site</a></li>
+                                <li><a href="spil_embed.html">spil-site</a></li>
+                                <li><a href="avis_embed.html">avis-site</a></li>
+                                <li><a href="karmen.html">karmen-site</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="om.html">KONTAKT</a></li>
+                    </ul>
+                    <iframe height="500px" style="width: 100%;" scrolling="no" title="dropdown menu js"
+                        src="https://codepen.io/jepwebbe/embed/wvrJaWJ?default-tab=js" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/jepwebbe/pen/wvrJaWJ">
+                            dropdown menu js</a> by Jeppe (<a href="https://codepen.io/jepwebbe">@jepwebbe</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </article>
+                <article id="localstorage">
+                    <h2>localStorage</h2>
+                </article>
+                <article id="validate">
+                    <h2>formvalidering</h2>
+                    <section id="bill">
+                        <h1>Fakturering</h1>
+                        <form action="" method="post">
+                            <div class="bill__form">
+                                <div><label for="address">Adresse</label><input type="text" name="address"
+                                        placeholder="Københavnsvej 102" id="address"></div>
+                                <div class="oneliner">
+                                    <label for="city">By</label>
+                                    <label for="zipcode">Postnummer</label>
+                                    <input type="text" name="city" placeholder="Roskilde" id="city">
+                                    <input type="text" name="zipcode" placeholder="4000" id="zipcode">
+                                </div>
+                                <div><label for="email">Email</label><input type="email" name="email"
+                                        placeholder="noreply@info.dk" id="email">
+                                </div>
+                                <input type="submit" name="send" class="g-button" value="Til betaling">
+                                <p id="error-message"></p>
+                            </div> <!-- bill__form end -->
+                        </form>
+                    </section> <!-- bill end -->
+                    <iframe height="500px" style="width: 100%;" scrolling="no" title="Untitled"
+                        src="https://codepen.io/jepwebbe/embed/bGoqENX?default-tab=js" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/jepwebbe/pen/bGoqENX">
+                            Untitled</a> by Jeppe (<a href="https://codepen.io/jepwebbe">@jepwebbe</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </article>
+                <article id="burger">
+                    <h2>burgermenu</h2>
+                    <div class="burger"><i class="fas fa-bars"></i><i class="fas fa-times"></i></div>
+                    <ul class="g-navbar">
+                        <li class="g-nav-head" id="g-nav-active"><a href="index.html">Forside</a></li>
+                        <li class="g-nav-head"><a href="#">Produkter</a></li>
+                        <li class="g-nav-head g-drop"><a href="">Mere info</a>
+                        </li>
+                    </ul>
+                    <iframe height="300px" style="width: 100%;" scrolling="no" title="burgermenu"
+                        src="https://codepen.io/jepwebbe/embed/rNGyeMZ?default-tab=js" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/jepwebbe/pen/rNGyeMZ">
+                            burgermenu</a> by Jeppe (<a href="https://codepen.io/jepwebbe">@jepwebbe</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                </article> <!-- burger end -->
+                <article id="readmore">
+                    <h2>læs-mere-knap</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem animi, mollitia magnam voluptate
+                        optio eligendi accusamus nihil nesciunt et modi ullam sint earum illum recusandae consequuntur?
+                        Nihil aliquid sit cum.</p>
+                    <div class="readmore__extratext">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae nemo obcaecati dicta nisi
+                            natus sed
+                            tempore repudiandae nulla quae nam debitis labore consequuntur maxime, sunt iste, odio
+                            dolores?
+                            Odit, alias.</p>
+                    </div>
+                    <p class="readmore__button">Læs mere</p>
+                    <iframe height="300" style="width: 100%;" scrolling="no" title="read more button" src="https://codepen.io/jepwebbe/embed/qBPrQOO?default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href="https://codepen.io/jepwebbe/pen/qBPrQOO">
+                        read more button</a> by Jeppe (<a href="https://codepen.io/jepwebbe">@jepwebbe</a>)
+                        on <a href="https://codepen.io">CodePen</a>.
+                      </iframe>
+                </article>
+            </div> <!-- snippets other end -->
+        </main>
+        <footer>
+            <div>
+                <p><img src="images/copyleft.svg" alt="Copyleft ikon">No rights reserved and all freedoms taken<img src="images/copyleft.svg" alt="Copyleft ikon"></p>
+            </div>
+        </footer>
+    </div> <!-- wrapper end -->
+    <script src="js/landing.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/validate-form.js"></script>
+    <script src="js/gallery-arrows.js"></script>
+    <script src="js/gallery-thumbnails.js"></script>
+    <script src="js/gallery-lightbox.js"></script>
+    <script src="js/readmore.js"></script>
+</body>
+
+</html>

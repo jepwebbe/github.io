@@ -1,0 +1,1 @@
+let NAME = localStorage.getItem('newsletter');

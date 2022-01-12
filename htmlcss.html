@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/c1fd27c7bd.js" crossorigin="anonymous"></script>
+    <title>html & css</title>
+
+</head>
+
+<body id="htmlcss">
+    <div id="wrapper">
+        <header>
+            <a href="index.html"><i class="fas fa-fist-raised"></i></a>
+            <nav>
+                <!-- Menu -->
+                <ul class="g-navbar">
+                    <li class="g-nav-head">SNIPPETS
+                        <ul class="drop">
+                            <li class="g-nav-subhead"><a href="javascript.html">javascript</a>
+                                <ul class="drop">
+                                    <li><a href="javascript.html#gallery">gallerier</a></li>
+                                    <li><a href="javascript.html#dropdown">dropdown</a></li>
+                                    <li><a href="javascript.html#localstorage">localstorage</a></li>
+                                    <li><a href="javascript.html#validate">formvalidering</a></li>
+                                    <li><a href="javascript.html#burger">burgermenu</a></li>
+                                    <li><a href="javascript.html#readmore">læs mere-knap</a></li>
+                                </ul>
+                            </li>
+                            <li class="g-nav-subhead" id="subhead-right"><a href="htmlcss.html">html & css</a>
+                                <ul class="drop">
+                                    <li><a href="htmlcss.html#grid">grids</a></li>
+                                    <li><a href="htmlcss.html#flex">flexbox</a></li>
+                                    <li><a href="htmlcss.html#table">table</a></li>
+                                    <li><a href="htmlcss.html#list">list</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="g-nav-head">SITES
+                        <ul class="drop">
+                            <li><a href="sites/film_embed.html">film-site</a></li>
+                            <li><a href="sites/spil_embed.html">spil-site</a></li>
+                            <li><a href="sites/avis_embed.html">avis-site</a></li>
+                            <li><a href="sites/next_embed.html">next-site</a></li>                            
+                            <li><a href="sites/karmen_embed.html">karmen-site</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="mailto:jepwebbe@gmail.com">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="gridflex" id="grid">
+                <h2>grid med minmax og order</h2>
+                <div class="grid__minmax">
+                    <p>1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem animi, mollitia magnam
+                        voluptate
+                        optio eligendi accusamus nihil nesciunt et modi ullam sint earum illum recusandae consequuntur?
+                        Nihil aliquid sit cum.</p>
+                    <img src="https://jepwebbe.github.io/codepen/images/gallery/image1.jpg" alt="An image">
+                    <p class="second">2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem animi, mollitia
+                        magnam
+                        voluptate
+                        optio eligendi accusamus nihil nesciunt et modi ullam sint earum illum recusandae consequuntur?
+                        Nihil aliquid sit cum.</p>
+                    <img class="second" src="https://jepwebbe.github.io/codepen/images/gallery/image2.jpg"
+                        alt="An image">
+                    <p>3Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem animi, mollitia magnam
+                        voluptate
+                        optio eligendi accusamus nihil nesciunt et modi ullam sint earum illum recusandae consequuntur?
+                        Nihil aliquid sit cum.</p>
+                    <img src="https://jepwebbe.github.io/codepen/images/gallery/image3.jpg" alt="An image">
+                </div> <!-- grid__minmax end-->
+
+                <h2 id="flex">flexbox med order</h2>
+                <div class="flex__order" >
+                    <div class="first"><img src="https://jepwebbe.github.io/codepen/images/cannot.jpg" alt="An image">
+                    </div>
+                    <div class="second flex__order--hover"><img src="https://jepwebbe.github.io/codepen/images/hoverme.jpg" alt="An image">
+                    </div>
+                    <div class="third flex__order--hover"><img
+                            src="https://jepwebbe.github.io/codepen/images/clickme.jpg" alt="An image"></div>
+                </div> <!-- flex__order end-->
+                <iframe height="500px" style="width: 100%;" scrolling="no" title="gridflex"
+                    src="https://codepen.io/jepwebbe/embed/rNGyQPx?default-tab=css" frameborder="no" loading="lazy"
+                    allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/jepwebbe/pen/rNGyQPx">
+                        gridflex</a> by Jeppe (<a href="https://codepen.io/jepwebbe">@jepwebbe</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+            </section> <!-- gridflex end -->
+            <section id="table">
+                <h2>table med bars</h2>
+                <div class="flex-container">
+                <table class="bar-table">
+                    <tr>
+                        <th>En procentsats</th>
+                        <td>
+                            <div class="bar-table__row1-1">27%</div>
+                            <div class="bar-table__row1-2"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Endnu en procentsats</th>
+                        <td>
+                            <div class="bar-table__row2-1">20%</div>
+                            <div class="bar-table__row2-2"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Finans- og låneydelser til arbejdere og deres familier</th>
+                        <td>
+                            <div class="bar-table__row3-1">17%</div>
+                            <div class="bar-table__row3-2"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Dette relaterer sig til tal</th>
+                        <td>
+                            <div class="bar-table__row4-1">14%</div>
+                            <div class="bar-table__row4-2"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Her er der så en til</th>
+                        <td>
+                            <div class="bar-table__row5-1">67%</div>
+                            <div class="bar-table__row5-2"></div>
+                        </td>
+                    </tr>
+                </table>
+                <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/jepwebbe/embed/wvrddXJ?default-tab=css" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/jepwebbe/pen/wvrddXJ">
+                    Untitled</a> by Jeppe (<a href="https://codepen.io/jepwebbe">@jepwebbe</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                  </iframe>
+                </div> <!-- flex-container end -->
+            </section> <!-- #table end -->
+            <div class="dropdown-css"></div>
+        </main>
+        <footer>
+            <div>
+                <p><img src="images/copyleft.svg" alt="Copyleft ikon">No rights reserved and all freedoms taken<img src="images/copyleft.svg" alt="Copyleft ikon"></p>
+            </div>
+        </footer>
+    </div> <!-- wrapper end-->
+    <script src="js/landing.js"></script>
+</body>
+
+</html>

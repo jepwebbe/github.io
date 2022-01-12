@@ -74,7 +74,7 @@ footer{
 .g-embed {
     position: relative;
     /*padding-bottom: 56.25%;  - for 16:9 video*/
-    padding-bottom: 100%;
+    padding-bottom: 75%;
     overflow: hidden;
 }
 .g-embed iframe {
